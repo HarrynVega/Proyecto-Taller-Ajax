@@ -1,0 +1,7 @@
+CREATE TABLE recetas (
+idReceta int NOT NULL AUTO_INCREMENT,
+Nombre varchar(100) NOT NULL,
+Ingredientes text NOT NULL,
+Instrucciones text NOT NULL,
+Imagen text NOT NULL,
+PRIMARY KEY (idReceta));

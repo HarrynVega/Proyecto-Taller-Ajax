@@ -1,10 +1,6 @@
-function showview(view){
-    $.ajax({
-        data: {},
-        url: "php/"+view+".php",
-        type: "POST",
-        dataType: 'html'
-    }).done(function(data){
-        $("#pageView").html(data);
-    }) 
-}
+$('input#subBorrar').on('click', function() {
+    alert(1);
+});
+
+// https://www.youtube.com/watch?v=Yb3c-HljFro
+// Tutorial que estoy siguiendo para mostrar de forma dinamica los datos de MySQL

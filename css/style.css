@@ -8,8 +8,9 @@
   h2{
     font-family: "Fjalla One", sans-serif;
   }
-  
 
+  .derecha {float:left;}
+  
   /* Oscarin */
 .formCREATE{
     margin-left: auto;

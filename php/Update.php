@@ -38,18 +38,27 @@
 </nav>  
 <center><h1>Actualizador</h1></center>
     <div class="drop-area">
-        <img id="uploadPreview" style="width: 500px; height: 500px;" />
-        <input id="uploadImage" type="file" name="myPhoto" onchange="PreviewImage();" />
+        <img id="uploadPreview" style="width: 500px; height: 500px;" /></img>
+        <input id="uploadImage" type="file" name="myPhoto" onchange="PreviewImage();" /></input>
         <script type="text/javascript">
 
-            function PreviewImage() {
-            var oFReader = new FileReader();
-            oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
+            function PreviewImage() 
+            {
+              var oFReader = new FileReader();
+              oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
 
-            oFReader.onload = function (oFREvent) {
-            document.getElementById("uploadPreview").src = oFREvent.target.result;
-        };
-    };
+              oFReader.onload = function (oFREvent) 
+              {
+                document.getElementById("uploadPreview").src = oFREvent.target.result;
+              };
+            };
+        </script>
+        <div class="derecha">
+            <h1><input type="text"></input></h1>
+            <input type="text"></input>
+        </div>
+    </div>
+ 
 
 </script>
     <script type="text/javascript" src="../js/photo.js"></script>
